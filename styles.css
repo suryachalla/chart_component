@@ -1,0 +1,144 @@
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'DM Sans', sans-serif;
+  }
+
+  .chart-container {
+      max-width: 100%;
+      padding: 10px 10px 10px 0;
+  }
+
+  .chart {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .bar-container {
+      display: flex;
+      align-items: flex-end;
+      margin-top: 10px;
+  }
+
+  .bar {
+      width: 50px;
+      background-color: hsl(10, 79%, 65%);
+      margin-right: 10px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+  }
+
+  .x-axis {
+      display: flex;
+      color: rgb(176, 174, 174);
+      /* width: 40px; */
+      /* margin-top: 10px; */
+  }
+
+  .x-axis>div {
+      min-width: 50px;
+      margin-right: 10px;
+      text-align: center;
+      padding-top: 10px;
+  }
+
+  .x-label {
+      font-size: 14px;
+  }
+
+  .bar:hover {
+      background-color: hsl(186, 34%, 60%);
+  }
+
+  #titleWrapper,
+  #barWrapper {
+      display: flex;
+      flex-direction: row;
+  }
+
+  #titleWrapper>div {
+      min-width: 50px;
+      margin-right: 10px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      padding: 2px 2px;
+  }
+
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(27, 66%, 92%)
+  }
+
+  .container{
+    max-width: 600px;
+}
+
+.balanceCard{
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.balanceDisplay{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.chartCard{
+    width: 500px;
+    height: auto;
+    background-color: hsl(33, 100%, 98%);
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.chartCard > h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.totalCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monthBalance h1{
+    font-size: 42px;
+}
+
+.monthPercentage{
+    text-align: right;
+}
+
+.lastBox{
+    border-top: 1px solid rgb(176, 174, 174);
+    padding: 20px 0 20px 0;
+    margin-top: 10px;
+}
+
+.lastBox > p{
+    color: rgb(176, 174, 174);
+}
+
+.monthPercentage > .last{
+    color: rgb(176, 174, 174);
+}
